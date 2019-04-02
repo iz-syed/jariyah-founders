@@ -1,0 +1,117 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+	
+	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	
+	<style amp-custom>
+      body {
+        /*animation:none 0s ease 0s 1 normal none running;*/
+      }
+	  ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	li {
+	  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+	  border-bottom: 1px solid #ccc;
+	}
+
+	li:last-child {
+	  border: none;
+	}
+
+	li a {
+	  text-decoration: none;
+	  color: #000;
+	  display: block;
+	  
+	  -webkit-transition: background-color 0.3s ease;
+	  -moz-transition: background-color 0.3s ease;
+	  -o-transition: background-color 0.3s ease;
+	  -ms-transition: background-color 0.3s ease;
+	  transition: background-color 0.3s ease;
+	}
+
+	li a:hover {
+	  background: #f6f6f6;
+	}
+
+	p {
+		margin: 0;
+	}
+    </style>
+<head>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/data/index.js"></script>
+
+</head>
+<body>
+	<ul class="surah-name">
+		<li>
+			<a href="#">Welcome</a>
+			
+			<select class="lang-dd">
+				<option value="">Select</option>
+				<option value="en">English</option>
+				<option value="ta">Tamil</option>
+			</select>
+
+			<div class="details-section">
+				
+			</div>
+		</li>
+	</ul>
+
+<script type="text/javascript">
+	var url = new URL(location.href);
+	var id = url.searchParams.get("id");
+
+	var item = getDataByID(id);
+	console.log(item);
+
+	if (item.verse) {
+		var $details = '';
+		for(var k in item.verse) {
+			$details += '<p>' + item.verse[k] + '</p>';
+			$details += '<p data-verse="'+k+'"></p>';
+		}
+		$('.details-section').html($details);
+	}
+
+	$(document).ready(function() {
+		$('.lang-dd').on('change', function(){
+			var lang_code = $(this).val();
+			console.log(lang_code);
+			console.log(item.lang[lang_code]);
+			if (item.lang && item.lang[lang_code]) {
+				for(var k in item.lang[lang_code]) {
+					$('[data-verse="'+k+'"]').html(item.lang[lang_code][k]);
+				}
+			}
+		})
+	});
+</script>
+</body>
+</html>
+
+
