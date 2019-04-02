@@ -76,7 +76,22 @@ var data = [
 						"end": "verse_286"
 					}
 				}
-			]
+			],
+			"verse": {
+		        "verse_1": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+		        
+		    },
+		    "lang": {
+		    	"en": {
+		    		"verse_1": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+			        
+			    },
+			    "ta": {
+		    		"verse_1": "அளவற்ற அருளாளன், நிகரற்ற அன்பாளன், அல்லாஹ்வின் பெயரால்! (தொடங்குகிறேன்).",
+			        
+			    }
+		    }
+
 		},
 		{
 			"place": "Madeena",
