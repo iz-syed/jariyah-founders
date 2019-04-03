@@ -2222,7 +2222,21 @@ var data = [
 						"end": "verse_5"
 					}
 				}
-			]
+			],
+			"verse": {
+		        "verse_1": " Arabic"
+		        
+		    },
+			"lang": {
+		    	"en": {
+		    		"verse_1": "English"
+			        
+			    },
+			    "ta": {
+		    		"verse_1": "tamil"
+			        
+			    }
+		    }
 		},
 		{
 			"place": "Makkah",
@@ -2240,7 +2254,37 @@ var data = [
 						"end": "verse_6"
 					}
 				}
-			]
+			],
+			"verse": {
+		        "verse_1": " Arabic",
+		        "verse_2": " Arabic",
+		        "verse_2": " Arabic",
+		        "verse_3": " Arabic",
+		        "verse_4": " Arabic",
+		        "verse_5": " Arabic",
+		        "verse_6": " Arabic"
+		        
+		    },
+			"lang": {
+		    	"en": {
+		    		"verse_1": "English",
+		    		"verse_2": "English",
+		    		"verse_3": "English",
+		    		"verse_4": "English",
+		    		"verse_5": "English",
+		    		"verse_6": "English"
+			        
+			    },
+			    "ta": {
+		    		"verse_1": "tamil",
+		    		"verse_2": "tamil",
+		    		"verse_3": "tamil",
+		    		"verse_4": "tamil",
+		    		"verse_5": "tamil",
+		    		"verse_6": "tamil"
+			        
+			    }
+		    }
 		}
 	]
 

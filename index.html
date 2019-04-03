@@ -83,7 +83,7 @@
 			htmlText += '<span class="surah-name-ar">  '+ data[key].titleAr +' </span>';
 		htmlText += '</p>';
  
-		htmlText += '<span class="surah-place"> Place: ' + data[key].place + ' - ' + data[key].type + ' </span>';
+		htmlText += '<span class="surah-place '+ data[key].place.toLowerCase() +'"> Place: ' + data[key].place + ' - ' + data[key].type + ' </span>';
 		// htmlText += '<span class="surah-type"> Type: ' + data[key].type + ' </span>';
 		htmlText += '<p class="surah-count"> Count: ' + data[key].count + ' </p>';
 		htmlText += '</li>';

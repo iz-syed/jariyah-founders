@@ -59,7 +59,29 @@
 	p {
 		margin: 0;
 	}
+	
+	[data-lang="ar"]{
+	/*font-family: Ayah;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    direction: rtl;
+    text-align: justify;
+    letter-spacing: -2.1px
+	}
+	
+	[data-lang="ar"] {
+    font-family: PauseMarks, Amiri;
+    letter-spacing: 0;
+    line-height: 1.6;
+	color: #20b2aa;
+	}
+	
+	
     </style>
+	
+
 <head>
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/data/index.js"></script>
@@ -92,7 +114,7 @@
 	if (item.verse) {
 		var $details = '';
 		for(var k in item.verse) {
-			$details += '<p>' + item.verse[k] + '</p>';
+			$details += '<p data-lang="ar">' + item.verse[k] + '</p>';
 			$details += '<p data-verse="'+k+'"></p>';
 		}
 		$('.details-section').html($details);
@@ -106,6 +128,7 @@
 			if (item.lang && item.lang[lang_code]) {
 				for(var k in item.lang[lang_code]) {
 					$('[data-verse="'+k+'"]').html(item.lang[lang_code][k]);
+					$('[data-verse="'+k+'"]').attr('data-lang', lang_code);
 				}
 			}
 		})
