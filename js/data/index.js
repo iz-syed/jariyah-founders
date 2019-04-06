@@ -45,7 +45,7 @@ var data = [
 			        "verse_7": "(அது) நீ எவர்களுக்கு அருள் புரிந்தாயோ அவ்வழி, (அது) உன் கோபத்துக்கு ஆளானோர் வழியுமல்ல, நெறி தவறியோர் வழியுமல்ல."
 			    }
 		    }
-		},
+		}, // 001 - Al-Fatiha
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -92,7 +92,7 @@ var data = [
 			    }
 		    }
 
-		},
+		}, // 002 - Al-Baqara
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -117,7 +117,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 003 - Aal-Imran
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -149,7 +149,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 004 - An-Nisaa
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -174,7 +174,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 005 - Al-Ma'ida
 		{
 			"place": "Makkah",
 			"type": "Makkiyah",
@@ -199,7 +199,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 006 - Al-An'am
 		{
 			"place": "Makkah",
 			"type": "Makkiyah",
@@ -224,7 +224,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 007 - Al-A'raf
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -249,7 +249,7 @@ var data = [
 					}
 				}
 			]
-		},
+		}, // 008 - Al-Anfal
 		{
 			"place": "Madeena",
 			"type": "Madaniyah",
@@ -2224,16 +2224,30 @@ var data = [
 				}
 			],
 			"verse": {
-		        "verse_1": " Arabic"
-		        
-		    },
+				"verse_0": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+				"verse_1": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+				"verse_2": "مِنْ شَرِّ مَا خَلَقَ",
+				"verse_3": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+				"verse_4": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+				"verse_5": "وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ"
+			},
 			"lang": {
 		    	"en": {
-		    		"verse_1": "English"
+		    		"verse_0": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+		    		"verse_1": "Say, 'I seek refuge in the Lord of daybreak'",
+		    		"verse_2": "From the evil of that which He created",
+		    		"verse_3": "And from the evil of darkness when it settles",
+		    		"verse_4": "And from the evil of the blowers in knots",
+		    		"verse_5": "And from the evil of an envier when he envies."
 			        
 			    },
 			    "ta": {
-		    		"verse_1": "tamil"
+		    		"verse_0": "அளவற்ற அருளாளன், நிகரற்ற அன்பாளன், அல்லாஹ்வின் பெயரால்! (தொடங்குகிறேன்).",
+		    		"verse_1": "(நபியே!) நீர் சொல்வீராக: அதிகாலையின் இறைவனிடத்தில் நான் காவல் தேடுகிறேன்.",
+		    		"verse_2": "அவன் படைத்தவற்றின் தீங்கை விட்டும்-",
+		    		"verse_3": "இருள் பரவும் போது ஏற்படும் இரவின் தீங்கை விட்டும்-",
+		    		"verse_4": "இன்னும், முடிச்சுகளில் (மந்திரித்து) ஊதும் பெண்களின் தீங்கை விட்டும்,",
+		    		"verse_5": "பொறாமைக்காரன் பொறாமை கொள்ளும் போதுண்டாகும் தீங்கை விட்டும் (காவல் தேடுகிறேன்)."
 			        
 			    }
 		    }
@@ -2256,17 +2270,17 @@ var data = [
 				}
 			],
 			"verse": {
-		        "verse_1": " Arabic",
-		        "verse_2": " Arabic",
-		        "verse_2": " Arabic",
-		        "verse_3": " Arabic",
-		        "verse_4": " Arabic",
-		        "verse_5": " Arabic",
-		        "verse_6": " Arabic"
-		        
-		    },
+					"verse_0": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+					"verse_1": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+					"verse_2": "مَلِكِ النَّاسِ",
+					"verse_3": "إِلَٰهِ النَّاسِ",
+					"verse_4": "مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ",
+					"verse_5": "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ",
+					"verse_6": "مِنَ الْجِنَّةِ وَالنَّاسِ"
+					},
 			"lang": {
 		    	"en": {
+		    		"verse_0": "English",
 		    		"verse_1": "English",
 		    		"verse_2": "English",
 		    		"verse_3": "English",
@@ -2276,13 +2290,13 @@ var data = [
 			        
 			    },
 			    "ta": {
-		    		"verse_1": "tamil",
-		    		"verse_2": "tamil",
-		    		"verse_3": "tamil",
-		    		"verse_4": "tamil",
-		    		"verse_5": "tamil",
-		    		"verse_6": "tamil"
-			        
+		    		"verse_0": "அளவற்ற அருளாளன், நிகரற்ற அன்பாளன், அல்லாஹ்வின் பெயரால்! (தொடங்குகிறேன்).",
+		    		"verse_1": "(நபியே!) நீர் கூறுவீராக: மனிதர்களின் இறைவனிடத்தில் நான் காவல் தேடுகிறேன்.",
+		    		"verse_2": "(அவனே) மனிதர்களின் அரசன்;",
+		    		"verse_3": "(அவனே) மனிதர்களின் நாயன்.",
+		    		"verse_4": "பதுங்கியிருந்து வீண் சந்தேகங்களை உண்டாக்குபவனின் தீங்கை விட்டும் (இறைவனிடத்தில் நான் காவல் தேடுகிறேன்).",
+		    		"verse_5": "அவன் மனிதர்களின் இதயங்களில் வீண் சந்தேகங்களை உண்டாக்குகிறான்.",
+		    		"verse_6": "(இத்தகையோர்) ஜின்களிலும், மனிதர்களிலும் இருக்கின்றனர்."
 			    }
 		    }
 		}
